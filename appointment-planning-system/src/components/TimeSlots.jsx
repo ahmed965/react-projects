@@ -8,7 +8,7 @@ export function TimeSlots({ doctorId }) {
     const getTimeSlots = async () => {
       try {
         const baseUrl = process.env.REACT_APP_API_BASE_URL;
-        const data = await fetch(`${baseUrl}/timeslots/availab?doctor_id=${doctorId}`);
+        const data = await fetch(`${baseUrl}/timeslots/available?doctor_id=${doctorId}`);
         const result = await data.json();
         setTimeSlots(result);
       } catch (error) {
