@@ -24,7 +24,7 @@ export function DoctorList({ onSelectDoctor }) {
   return (
     <div>
       <h2 className="mb-4">Doctors:</h2>
-      <div>
+      <div className="row">
         {doctors.map((doctor) => {
           return (
             <div className="col-md-4" key={doctor.id} onClick={() => onSelectDoctor(doctor)}>
